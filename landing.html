@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, #3498db, #8e44ad);
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            padding: 40px;
+            box-sizing: border-box;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .container:hover {
+            transform: scale(1.02);
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input[type="text"], input[type="file"] {
+            width: calc(100% - 24px);
+            padding: 14px;
+            margin: 10px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus, input[type="file"]:focus {
+            border-color: #3498db;
+        }
+
+        button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 14px 28px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Sentiment Analysis</h1>
+        <p>Enter text or upload a file to analyze sentiment</p>
+        
+        <form>
+            <input type="text" name="text" placeholder="Enter text">
+            <input type="file" name="file" accept=".txt, .csv">
+            <button type="button" onclick="analyzeSentiment()">Analyze</button>
+        </form>
+    </div>
+
+    <script>
+        function analyzeSentiment() {
+            // Add your sentiment analysis logic here
+            alert("Sentiment analysis will be performed here!");
+        }
+    </script>
+
+</body>
+</html>
